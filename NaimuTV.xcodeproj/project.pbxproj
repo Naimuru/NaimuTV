@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		6A79D1A729CC36D600DD2C5D /* NaimuTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A79D1A629CC36D600DD2C5D /* NaimuTVApp.swift */; };
-		6A79D1A929CC36D600DD2C5D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A79D1A829CC36D600DD2C5D /* ContentView.swift */; };
 		6A79D1AB29CC36D800DD2C5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A79D1AA29CC36D800DD2C5D /* Assets.xcassets */; };
 		6A79D1AE29CC36D800DD2C5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A79D1AD29CC36D800DD2C5D /* Preview Assets.xcassets */; };
 		6A79D1B829CC36D800DD2C5D /* NaimuTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A79D1B729CC36D800DD2C5D /* NaimuTVTests.swift */; };
 		6A79D1C229CC36D800DD2C5D /* NaimuTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A79D1C129CC36D800DD2C5D /* NaimuTVUITests.swift */; };
 		6A79D1C429CC36D800DD2C5D /* NaimuTVUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A79D1C329CC36D800DD2C5D /* NaimuTVUITestsLaunchTests.swift */; };
+		6A79D1D129CC370600DD2C5D /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A79D1D029CC370600DD2C5D /* WebView.swift */; };
+		6A79D1D329CC373200DD2C5D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A79D1D229CC373200DD2C5D /* ContentView.swift */; };
+		6AC09F4129CC8BA2003749CA /* client.html in Resources */ = {isa = PBXBuildFile; fileRef = 6AC09F4029CC8BA2003749CA /* client.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		6A79D1A329CC36D600DD2C5D /* NaimuTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NaimuTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A79D1A629CC36D600DD2C5D /* NaimuTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaimuTVApp.swift; sourceTree = "<group>"; };
-		6A79D1A829CC36D600DD2C5D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6A79D1AA29CC36D800DD2C5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A79D1AD29CC36D800DD2C5D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6A79D1B329CC36D800DD2C5D /* NaimuTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NaimuTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,10 @@
 		6A79D1BD29CC36D800DD2C5D /* NaimuTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NaimuTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A79D1C129CC36D800DD2C5D /* NaimuTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaimuTVUITests.swift; sourceTree = "<group>"; };
 		6A79D1C329CC36D800DD2C5D /* NaimuTVUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaimuTVUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6A79D1D029CC370600DD2C5D /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		6A79D1D229CC373200DD2C5D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6AC09F4029CC8BA2003749CA /* client.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = client.html; path = ../../Downloads/client.html; sourceTree = "<group>"; };
+		6AC09F4229CC8BCF003749CA /* client.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = client.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +79,7 @@
 		6A79D19A29CC36D600DD2C5D = {
 			isa = PBXGroup;
 			children = (
+				6AC09F4029CC8BA2003749CA /* client.html */,
 				6A79D1A529CC36D600DD2C5D /* NaimuTV */,
 				6A79D1B629CC36D800DD2C5D /* NaimuTVTests */,
 				6A79D1C029CC36D800DD2C5D /* NaimuTVUITests */,
@@ -94,8 +100,10 @@
 		6A79D1A529CC36D600DD2C5D /* NaimuTV */ = {
 			isa = PBXGroup;
 			children = (
+				6AC09F4229CC8BCF003749CA /* client.html */,
+				6A79D1D229CC373200DD2C5D /* ContentView.swift */,
+				6A79D1D029CC370600DD2C5D /* WebView.swift */,
 				6A79D1A629CC36D600DD2C5D /* NaimuTVApp.swift */,
-				6A79D1A829CC36D600DD2C5D /* ContentView.swift */,
 				6A79D1AA29CC36D800DD2C5D /* Assets.xcassets */,
 				6A79D1AC29CC36D800DD2C5D /* Preview Content */,
 			);
@@ -233,6 +241,7 @@
 			files = (
 				6A79D1AE29CC36D800DD2C5D /* Preview Assets.xcassets in Resources */,
 				6A79D1AB29CC36D800DD2C5D /* Assets.xcassets in Resources */,
+				6AC09F4129CC8BA2003749CA /* client.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A79D1A929CC36D600DD2C5D /* ContentView.swift in Sources */,
+				6A79D1D129CC370600DD2C5D /* WebView.swift in Sources */,
 				6A79D1A729CC36D600DD2C5D /* NaimuTVApp.swift in Sources */,
+				6A79D1D329CC373200DD2C5D /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +427,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NaimuTV/Preview Content\"";
+				DEVELOPMENT_TEAM = PSYK7425V9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -445,6 +456,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NaimuTV/Preview Content\"";
+				DEVELOPMENT_TEAM = PSYK7425V9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
