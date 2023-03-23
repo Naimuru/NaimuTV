@@ -41,7 +41,7 @@
     <script>
         function turnOffMonitor() {
             // Replace "your-computer-ip" with the IP address of the computer running the server script
-            fetch('http://192.168.128.16:5001/turn_off_monitor')
+            fetch('http://your-computer-ip:5000/turn_off_monitor')
                 .then(response => {
                     if (response.ok) {
                         alert('Monitor turned off');
