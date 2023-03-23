@@ -1,7 +1,7 @@
 # NaimuTV
 
 <p align="center">
-  <img src="https://your-logo-url.png" alt="Turn Off Monitor Logo" width="200">
+  <img src="https://cdn.discordapp.com/attachments/1008571159043903509/1088466320988835910/Tadai_Create_a_logo_for_an_iOS_application_where_it_is_in_bit_p_bdaf05da-bcbf-45a0-bc32-1c864dfaeb67.png" alt="Turn Off Monitor Logo" width="200">
 </p>
 
 NaimuTV is a simple iOS app that allows users to remotely turn off their computer monitors using their mobile devices. The app communicates with a Python server running on the target computer to send the turn-off command.
