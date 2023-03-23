@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turn Off Monitor</title>
+</head>
+<body>
+    <button onclick="turnOffMonitor()">Turn Off Monitor</button>
+
+    <script>
+        function turnOffMonitor() {
+            // Replace "your-computer-ip" with the IP address of the computer running the server script
+            fetch('http://192.168.128.4:5001/turn_off_monitor')
+                .then(response => {
+                    if (response.ok) {
+                        alert('Monitor turned off');
+                    } else {
+                        alert('Error turning off monitor');
+                    }
+                })
+                .catch(error => {
+                    alert('Error connecting to the server');
+                });
+        }
+    </script>
+</body>
+</html>
